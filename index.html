@@ -40,13 +40,6 @@
     to the internet <strong>without opening inbound ports</strong>, using:
   </p>
 
-  <img
-  src="architecture/architecture-diagram.svg"
-  alt="Secure n8n Architecture with Cloudflare Zero Trust"
-  style="max-width:100%; border:1px solid #ddd; border-radius:8px;"
-/>
-
-
   <ul>
     <li>Cloudflare Tunnel</li>
     <li>Cloudflare Zero Trust (OTP-based access)</li>
@@ -60,6 +53,12 @@
     The architecture includes Cloudflare Edge, Zero Trust Access, a secure tunnel,
     and a local Docker-hosted n8n instance bound to <code>127.0.0.1</code>.
   </p>
+
+<img
+  src="architecture/architecture-diagram.svg"
+  alt="Secure n8n Architecture with Cloudflare Zero Trust"
+  style="max-width:100%; border:1px solid #ddd; border-radius:8px;"
+/>
 
   <p>
     📌 Full architecture diagram and implementation details are available here:
