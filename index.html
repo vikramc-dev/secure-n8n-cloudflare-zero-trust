@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure n8n with Cloudflare Zero Trust</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    .box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      background: #fafafa;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🔐 Secure Self-Hosted Automation Platform</h1>
+<h2>n8n + Cloudflare Zero Trust</h2>
+
+<div class="box">
+  <p>
+    This project demonstrates how to securely expose a <strong>locally hosted n8n instance</strong>
+    to the internet <strong>without opening inbound ports</strong>, using:
+  </p>
+
+  <ul>
+    <li>Cloudflare Tunnel</li>
+    <li>Cloudflare Zero Trust (OTP-based access)</li>
+    <li>Dockerized n8n with persistent storage</li>
+  </ul>
+</div>
+
+<div class="box">
+  <h2>🏗 Architecture</h2>
+  <p>
+    The architecture includes Cloudflare Edge, Zero Trust Access, a secure tunnel,
+    and a local Docker-hosted n8n instance bound to <code>127.0.0.1</code>.
+  </p>
+
+  <p>
+    📌 Full architecture diagram and implementation details are available here:
+  </p>
+
+  <p>
+    👉 <a href="https://github.com/vikramc-dev/secure-n8n-cloudflare-zero-trust" target="_blank">
+      View full documentation on GitHub
+    </a>
+  </p>
+</div>
+
+<div class="box">
+  <h2>🔒 Security Highlights</h2>
+  <ul>
+    <li>No inbound firewall ports exposed</li>
+    <li>Identity-based access using Cloudflare Zero Trust</li>
+    <li>Selective webhook bypass for machine-to-machine traffic</li>
+    <li>Local-only n8n binding</li>
+  </ul>
+</div>
+
+</body>
+</html>
