@@ -36,14 +36,14 @@ No inbound ports are opened on the host system.
 
 ```mermaid
 flowchart LR
-    User[User Browser]
-    External[External Services<br/>(GitHub, Jira, Slack)]
-    CF[Cloudflare Edge]
-    Access[Cloudflare Zero Trust<br/>Access (OTP)]
-    Tunnel[Cloudflare Tunnel<br/>(cloudflared)]
-    Host[Local Windows Host]
-    Docker[Docker]
-    N8N[n8n<br/>127.0.0.1:5678]
+    User["User Browser"]
+    External["External Services\n(GitHub, Jira, Slack)"]
+    CF["Cloudflare Edge"]
+    Access["Cloudflare Zero Trust\nAccess (OTP)"]
+    Tunnel["Cloudflare Tunnel\n(cloudflared)"]
+    Host["Local Windows Host"]
+    Docker["Docker"]
+    N8N["n8n\n127.0.0.1:5678"]
 
     User --> Access --> CF --> Tunnel --> Host --> Docker --> N8N
     External --> CF --> Tunnel --> Host --> Docker --> N8N
